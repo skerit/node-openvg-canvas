@@ -4,7 +4,7 @@
 var eu = module.exports;
 
 var fs = require('fs');
-var image = require('../lib/image');
+var image = require('../lib/old_image');
 
 var animationHandle;
 
@@ -54,7 +54,7 @@ var waitForInput = eu.waitForInput = function (prompt, callback) {
 };
 
 var saveScreenshot = eu.saveScreenshot = function (ctx, x, y, w, h, filename) {
-  var imageData = ctx.getImageData(x, y, w, h);
-  var buffer = image.saveToBuffer(imageData);
-  fs.writeFile(filename, buffer);
+  // var imageData = ctx.getImageData(x, y, w, h);
+  // var buffer = image.saveToBuffer(imageData);
+  // fs.writeFile(filename, buffer);
 };

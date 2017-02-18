@@ -11,9 +11,10 @@ var fs = require('fs');
 
 var eu = require('./util');
 
-var grid = fs.readFileSync(__dirname + '/images/grid.gif');
+// var grid = fs.readFileSync(__dirname + '/images/grid.gif');
 var img = new Image();
-img.src = grid;
+// img.src = grid;
+img.src = __dirname + '/images/grid.gif';
 
 var x0 = 64, y0 = 64;
 var x = x0, y = y0;

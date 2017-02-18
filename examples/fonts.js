@@ -10,7 +10,7 @@ var ctx = canvas.getContext('2d');
 var eu = require('./util');
 
 var growthInterval = 50;
-var growthRate = 1.1;
+var growthRate = 1.01;
 var rotationStep = -Math.PI / 180 * 5;
 var textSize = 40;
 var fullText = [];
